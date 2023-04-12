@@ -1,0 +1,11 @@
+*
+!.env.development
+!.env.production
+!.eslintrc.json
+!.npmrc
+!.prettierrc
+!package.json
+!public/
+!src/
+!tsconfig.json
+!yarn.lock
