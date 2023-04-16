@@ -13,6 +13,8 @@ import { isShallowEqual, muteFSAbortError } from "../utils";
 import { SelectedShapeActions, ShapesSwitcher } from "./Actions";
 import { ErrorDialog } from "./ErrorDialog";
 import { ExportCB, ImageExportDialog } from "./ImageExportDialog";
+import { SwitchSceneDialog } from "./SwitchSceneDialog";
+import { NewSceneDialog } from "./NewSceneDialog";
 import { FixedSideContainer } from "./FixedSideContainer";
 import { HintViewer } from "./HintViewer";
 import { Island } from "./Island";
@@ -46,6 +48,7 @@ import { ActiveConfirmDialog } from "./ActiveConfirmDialog";
 import { HandButton } from "./HandButton";
 import { isHandToolActive } from "../appState";
 import { TunnelsContext, useInitializeTunnels } from "./context/tunnels";
+import { STORAGE_KEYS } from "../excalidraw-app/app_constants";
 
 interface LayerUIProps {
   actionManager: ActionManager;
@@ -194,6 +197,26 @@ const LayerUI = ({
     );
   };
 
+  const renderSwitchSceneDialog = () => {
+    return (
+      <SwitchSceneDialog
+        appState={appState}
+        setAppState={setAppState}
+        actionManager={actionManager}
+      />
+    );
+  };
+
+  const renderNewSceneDialog = () => {
+    return (
+      <NewSceneDialog
+        appState={appState}
+        setAppState={setAppState}
+        actionManager={actionManager}
+      />
+    );
+  };
+
   const renderCanvasActions = () => (
     <div style={{ position: "relative" }}>
       {/* wrapping to Fragment stops React from occasionally complaining
@@ -245,6 +268,11 @@ const LayerUI = ({
           >
             {renderCanvasActions()}
             {shouldRenderSelectedShapeActions && renderSelectedShapeActions()}
+            <span>
+              {localStorage.getItem(
+                STORAGE_KEYS.LOCAL_STORAGE_CURRENT_SCENE_NAME,
+              )}
+            </span>
           </Stack.Col>
           {!appState.viewModeEnabled && (
             <Section heading="shapes" className="shapes-section">
@@ -380,6 +408,8 @@ const LayerUI = ({
       <ActiveConfirmDialog />
       {renderImageExportDialog()}
       {renderJSONExportDialog()}
+      {renderSwitchSceneDialog()}
+      {renderNewSceneDialog()}
       {appState.pasteDialog.shown && (
         <PasteChartDialog
           setAppState={setAppState}

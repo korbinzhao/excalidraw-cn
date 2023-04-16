@@ -90,7 +90,9 @@ export class GlobalTestState {
 const initLocalStorage = (data: ImportedDataState) => {
   if (data.elements) {
     localStorage.setItem(
-      STORAGE_KEYS.LOCAL_STORAGE_ELEMENTS,
+      // STORAGE_KEYS.LOCAL_STORAGE_ELEMENTS,
+      localStorage.getItem(STORAGE_KEYS.LOCAL_STORAGE_CURRENT_SCENE_NAME) ||
+        STORAGE_KEYS.LOCAL_STORAGE_DEFAULT_SCENE_NAME,
       JSON.stringify(data.elements),
     );
   }

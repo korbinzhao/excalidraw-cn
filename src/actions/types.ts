@@ -73,6 +73,8 @@ export type ActionName =
   | "saveToActiveFile"
   | "saveFileToDisk"
   | "loadScene"
+  | "switchScene"
+  | "newScene"
   | "duplicateSelection"
   | "deleteSelectedElements"
   | "changeViewBackgroundColor"

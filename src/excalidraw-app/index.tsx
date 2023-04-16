@@ -512,6 +512,8 @@ const ExcalidrawWrapper = () => {
       collabAPI.syncElements(elements);
     }
 
+    console.log('--- onChange ---', appState, elements);
+
     setTheme(appState.theme);
 
     // this check is redundant, but since this is a hot path, it's best

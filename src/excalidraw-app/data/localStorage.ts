@@ -38,8 +38,15 @@ export const importFromLocalStorage = () => {
   let savedElements = null;
   let savedState = null;
 
+  const currentSceneName =
+    localStorage.getItem(STORAGE_KEYS.LOCAL_STORAGE_CURRENT_SCENE_NAME) ||
+    STORAGE_KEYS.LOCAL_STORAGE_DEFAULT_SCENE_NAME;
+
+  console.log("--- importFromLocalStorage ---", currentSceneName);
+
   try {
-    savedElements = localStorage.getItem(STORAGE_KEYS.LOCAL_STORAGE_ELEMENTS);
+    // savedElements = localStorage.getItem(STORAGE_KEYS.LOCAL_STORAGE_ELEMENTS);
+    savedElements = localStorage.getItem(currentSceneName);
     savedState = localStorage.getItem(STORAGE_KEYS.LOCAL_STORAGE_APP_STATE);
   } catch (error: any) {
     // Unable to access localStorage
@@ -75,7 +82,11 @@ export const importFromLocalStorage = () => {
 
 export const getElementsStorageSize = () => {
   try {
-    const elements = localStorage.getItem(STORAGE_KEYS.LOCAL_STORAGE_ELEMENTS);
+    const currentSceneName =
+      localStorage.getItem(STORAGE_KEYS.LOCAL_STORAGE_CURRENT_SCENE_NAME) ||
+      STORAGE_KEYS.LOCAL_STORAGE_DEFAULT_SCENE_NAME;
+    // const elements = localStorage.getItem(STORAGE_KEYS.LOCAL_STORAGE_ELEMENTS);
+    const elements = localStorage.getItem(currentSceneName);
     const elementsSize = elements?.length || 0;
     return elementsSize;
   } catch (error: any) {

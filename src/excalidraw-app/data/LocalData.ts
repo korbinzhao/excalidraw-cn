@@ -49,9 +49,12 @@ const saveDataStateToLocalStorage = (
 ) => {
   try {
     localStorage.setItem(
-      STORAGE_KEYS.LOCAL_STORAGE_ELEMENTS,
+      // STORAGE_KEYS.LOCAL_STORAGE_ELEMENTS,
+      localStorage.getItem(STORAGE_KEYS.LOCAL_STORAGE_CURRENT_SCENE_NAME) ||
+        STORAGE_KEYS.LOCAL_STORAGE_DEFAULT_SCENE_NAME,
       JSON.stringify(clearElementsForLocalStorage(elements)),
     );
+
     localStorage.setItem(
       STORAGE_KEYS.LOCAL_STORAGE_APP_STATE,
       JSON.stringify(clearAppStateForLocalStorage(appState)),

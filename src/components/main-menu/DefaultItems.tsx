@@ -32,6 +32,40 @@ import clsx from "clsx";
 import { useSetAtom } from "jotai";
 import { activeConfirmDialogAtom } from "../ActiveConfirmDialog";
 
+export const NewScene = () => {
+  const setAppState = useExcalidrawSetAppState();
+
+  return (
+    <DropdownMenuItem
+      icon={LoadIcon}
+      onSelect={() => setAppState({ openDialog: "newScene" })}
+      data-testid="recent-scenes-button"
+      shortcut={getShortcutFromShortcutName("newScene")}
+      aria-label={t("buttons.newScene")}
+    >
+      {t("buttons.newScene")}
+    </DropdownMenuItem>
+  );
+};
+
+export const SwitchScene = () => {
+  const setAppState = useExcalidrawSetAppState();
+
+  return (
+    <DropdownMenuItem
+      icon={LoadIcon}
+      onSelect={() => setAppState({ openDialog: "switchScene" })}
+      data-testid="recent-scenes-button"
+      shortcut={getShortcutFromShortcutName("switchScene")}
+      aria-label={t("buttons.switchScene")}
+    >
+      {t("buttons.switchScene")}
+    </DropdownMenuItem>
+  );
+};
+
+SwitchScene.displayName = "SwitchScene";
+
 export const LoadScene = () => {
   // FIXME Hack until we tie "t" to lang state
   // eslint-disable-next-line

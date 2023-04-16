@@ -9,6 +9,8 @@ export const AppMainMenu: React.FC<{
 }> = React.memo((props) => {
   return (
     <MainMenu>
+      <MainMenu.DefaultItems.NewScene />
+      <MainMenu.DefaultItems.SwitchScene />
       <MainMenu.DefaultItems.LoadScene />
       <MainMenu.DefaultItems.SaveToActiveFile />
       <MainMenu.DefaultItems.Export />

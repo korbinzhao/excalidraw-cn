@@ -165,7 +165,7 @@ export type AppState = {
     | "strokeColorPicker"
     | null;
   openSidebar: "library" | "customSidebar" | null;
-  openDialog: "imageExport" | "help" | "jsonExport" | null;
+  openDialog: "imageExport" | "help" | "jsonExport" | "switchScene" | "newScene" | null;
   isSidebarDocked: boolean;
 
   lastPointerDownWith: PointerType;

@@ -126,7 +126,8 @@
       "unlockAll": "全部解锁"
     },
     "statusPublished": "已发布",
-    "sidebarLock": "侧边栏常驻"
+    "sidebarLock": "侧边栏常驻",
+    "inputNewSceneName": "请输入新的画布名称"
   },
   "library": {
     "noItems": "尚未添加任何项目……",
@@ -146,6 +147,8 @@
     "save": "保存至当前文件",
     "saveAs": "保存为",
     "load": "打开",
+    "switchScene": "切换画布",
+    "newScene": "新建画布",
     "getShareableLink": "获取共享链接",
     "close": "关闭",
     "selectLanguage": "选择语言",
