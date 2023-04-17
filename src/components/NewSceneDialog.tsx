@@ -5,7 +5,12 @@ import { Dialog } from "./Dialog";
 import "./ExportDialog.scss";
 import { ActionManager } from "../actions/manager";
 import { Button } from "./Button";
-import { STORAGE_KEYS } from "../excalidraw-app/app_constants";
+import {
+  getContainerListFromStorage,
+  setContainerNameToStorage,
+  setContainerListToStorage,
+} from "../excalidraw-app/data/localStorage";
+import moment from 'moment';
 
 export const NewSceneDialog = ({
   // elements,
@@ -26,7 +31,9 @@ export const NewSceneDialog = ({
     setAppState({ openDialog: null });
   }, [setAppState]);
 
-  const [newSceneName, setNewSceneName] = useState(`new_scene_${Date.now()}`);
+  const [newContainerName, setNewContainerName] = useState(
+    `new_scene_${moment().format('YYYY-MM-DD')}`,
+  );
 
   return (
     <>
@@ -34,11 +41,11 @@ export const NewSceneDialog = ({
         <Dialog onCloseRequest={handleClose} title={t("buttons.newScene")}>
           <input
             type="text"
-            placeholder={t("labels.inputNewSceneName")}
+            placeholder={t("labels.inputNewContainerName")}
             style={{ minWidth: 500 }}
-            defaultValue={newSceneName}
+            defaultValue={newContainerName}
             onChange={(e) => {
-              setNewSceneName(e.target.value);
+              setNewContainerName(e.target.value);
             }}
           />
           <Button
@@ -51,13 +58,10 @@ export const NewSceneDialog = ({
               color: "#fff",
             }}
             onSelect={() => {
-              const sceneList: string[] = JSON.parse(
-                localStorage.getItem(STORAGE_KEYS.LOCAL_STORAGE_SCENE_LIST) ||
-                  `["${STORAGE_KEYS.LOCAL_STORAGE_DEFAULT_SCENE_NAME}"]`,
-              );
+              const containerList: string[] = getContainerListFromStorage();
 
-              if (sceneList.includes(newSceneName)) {
-                alert(`画布 ${newSceneName} 已存在，无需重复创建`);
+              if (containerList.includes(newContainerName)) {
+                alert(`画布 ${newContainerName} 已存在，无需重复创建`);
                 return;
               }
 
@@ -65,15 +69,8 @@ export const NewSceneDialog = ({
                 openDialog: null,
               });
 
-              localStorage.setItem(
-                STORAGE_KEYS.LOCAL_STORAGE_CURRENT_SCENE_NAME,
-                newSceneName,
-              );
-
-              localStorage.setItem(
-                STORAGE_KEYS.LOCAL_STORAGE_SCENE_LIST,
-                JSON.stringify([...sceneList, newSceneName]),
-              );
+              setContainerNameToStorage(newContainerName);
+              setContainerListToStorage([...containerList, newContainerName]);
             }}
           >
             {t("buttons.confirm")}

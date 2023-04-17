@@ -19,7 +19,6 @@ import {
   isEraserActive,
   isHandToolActive,
 } from "../appState";
-import { STORAGE_KEYS } from "../excalidraw-app/app_constants";
 
 export const actionChangeViewBackgroundColor = register({
   name: "changeViewBackgroundColor",
@@ -75,9 +74,6 @@ export const actionClearCanvas = register({
       ),
       appState: {
         ...getDefaultAppState(),
-        currentSceneName:
-          localStorage.getItem(STORAGE_KEYS.LOCAL_STORAGE_CURRENT_SCENE_NAME) ||
-          STORAGE_KEYS.LOCAL_STORAGE_DEFAULT_SCENE_NAME,
         files: {},
         theme: appState.theme,
         penMode: appState.penMode,

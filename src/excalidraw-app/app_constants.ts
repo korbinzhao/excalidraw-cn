@@ -31,9 +31,11 @@ export const ROOM_ID_BYTES = 10;
 
 export const STORAGE_KEYS = {
   // LOCAL_STORAGE_ELEMENTS: "excalidraw",
-  LOCAL_STORAGE_SCENE_LIST: "excalidraw_scene_list",
-  LOCAL_STORAGE_DEFAULT_SCENE_NAME: "excalidraw_default",
-  LOCAL_STORAGE_CURRENT_SCENE_NAME: "current_scene_name",
+  LOCAL_STORAGE_CONTAINER_LIST: "excalidraw_container_list",
+  LOCAL_STORAGE_DEFAULT_CONTAINER_NAME: "excalidraw_default_container_name",
+  LOCAL_STORAGE_CURRENT_CONTAINER_NAME: "excalidraw_current_container_name",
+  LOCAL_STORAGE_CONTAINER_ID: "excalidraw_container_id",
+  LOCAL_STORAGE_CONTAINER_NAME: "excalidraw_container_name",
   LOCAL_STORAGE_APP_STATE: "excalidraw-state",
   LOCAL_STORAGE_COLLAB: "excalidraw-collab",
   LOCAL_STORAGE_LIBRARY: "excalidraw-library",

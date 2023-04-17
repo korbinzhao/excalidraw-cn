@@ -38,15 +38,13 @@ export const importFromLocalStorage = () => {
   let savedElements = null;
   let savedState = null;
 
-  const currentSceneName =
-    localStorage.getItem(STORAGE_KEYS.LOCAL_STORAGE_CURRENT_SCENE_NAME) ||
-    STORAGE_KEYS.LOCAL_STORAGE_DEFAULT_SCENE_NAME;
+  const currentContainerName = getContainerNameFromStorage();
 
-  console.log("--- importFromLocalStorage ---", currentSceneName);
+  console.log("--- importFromLocalStorage ---", currentContainerName);
 
   try {
     // savedElements = localStorage.getItem(STORAGE_KEYS.LOCAL_STORAGE_ELEMENTS);
-    savedElements = localStorage.getItem(currentSceneName);
+    savedElements = localStorage.getItem(currentContainerName);
     savedState = localStorage.getItem(STORAGE_KEYS.LOCAL_STORAGE_APP_STATE);
   } catch (error: any) {
     // Unable to access localStorage
@@ -82,11 +80,9 @@ export const importFromLocalStorage = () => {
 
 export const getElementsStorageSize = () => {
   try {
-    const currentSceneName =
-      localStorage.getItem(STORAGE_KEYS.LOCAL_STORAGE_CURRENT_SCENE_NAME) ||
-      STORAGE_KEYS.LOCAL_STORAGE_DEFAULT_SCENE_NAME;
+    const currentContainerName = getContainerNameFromStorage();
     // const elements = localStorage.getItem(STORAGE_KEYS.LOCAL_STORAGE_ELEMENTS);
-    const elements = localStorage.getItem(currentSceneName);
+    const elements = localStorage.getItem(currentContainerName);
     const elementsSize = elements?.length || 0;
     return elementsSize;
   } catch (error: any) {
@@ -123,4 +119,56 @@ export const getLibraryItemsFromStorage = () => {
     console.error(error);
     return [];
   }
+};
+
+export const setContainerIdToStorage = (id: string) => {
+  if (id) {
+    localStorage.setItem(STORAGE_KEYS.LOCAL_STORAGE_CONTAINER_ID, id);
+  }
+};
+
+export const setContainerNameToStorage = (name: string) => {
+  if (name) {
+    localStorage.setItem(STORAGE_KEYS.LOCAL_STORAGE_CONTAINER_NAME, name);
+  }
+};
+
+export const getContainerIdFromStorage = () => {
+  localStorage.getItem(STORAGE_KEYS.LOCAL_STORAGE_CONTAINER_ID);
+};
+
+export const getContainerNameFromStorage = () => {
+  return (
+    localStorage.getItem(STORAGE_KEYS.LOCAL_STORAGE_CONTAINER_NAME) ||
+    STORAGE_KEYS.LOCAL_STORAGE_CONTAINER_NAME
+  );
+};
+
+export const getContainerListFromStorage = () => {
+  try {
+    return JSON.parse(
+      localStorage.getItem(STORAGE_KEYS.LOCAL_STORAGE_CONTAINER_LIST) || "[]",
+    );
+  } catch (err) {
+    console.error("localStorage getContainerList error", err);
+    return [];
+  }
+};
+
+export const setContainerListToStorage = (list: string[] = []) => {
+  localStorage.setItem(
+    STORAGE_KEYS.LOCAL_STORAGE_CONTAINER_LIST,
+    JSON.stringify(list),
+  );
+};
+
+export const getElementsFromStorage = () => {
+  const currentContainerName = getContainerNameFromStorage();
+
+  return JSON.parse(localStorage.getItem(currentContainerName) || "[]");
+};
+
+export const setElementsToStorage = (elements = []) => {
+  const currentContainerName = getContainerNameFromStorage();
+  localStorage.setItem(currentContainerName, JSON.stringify(elements));
 };

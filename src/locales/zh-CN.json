@@ -127,7 +127,7 @@
     },
     "statusPublished": "已发布",
     "sidebarLock": "侧边栏常驻",
-    "inputNewSceneName": "请输入新的画布名称"
+    "inputNewContainerName": "请输入新的画布名称"
   },
   "library": {
     "noItems": "尚未添加任何项目……",

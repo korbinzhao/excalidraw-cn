@@ -49,6 +49,7 @@ import { HandButton } from "./HandButton";
 import { isHandToolActive } from "../appState";
 import { TunnelsContext, useInitializeTunnels } from "./context/tunnels";
 import { STORAGE_KEYS } from "../excalidraw-app/app_constants";
+import { getContainerNameFromStorage } from "../excalidraw-app/data/localStorage";
 
 interface LayerUIProps {
   actionManager: ActionManager;
@@ -268,11 +269,7 @@ const LayerUI = ({
           >
             {renderCanvasActions()}
             {shouldRenderSelectedShapeActions && renderSelectedShapeActions()}
-            <span>
-              {localStorage.getItem(
-                STORAGE_KEYS.LOCAL_STORAGE_CURRENT_SCENE_NAME,
-              )}
-            </span>
+            <span>名称: {getContainerNameFromStorage()}</span>
           </Stack.Col>
           {!appState.viewModeEnabled && (
             <Section heading="shapes" className="shapes-section">

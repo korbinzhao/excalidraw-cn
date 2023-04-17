@@ -279,6 +279,10 @@ import { shouldShowBoundingBox } from "../element/transformHandles";
 import { Fonts } from "../scene/Fonts";
 import { actionPaste } from "../actions/actionClipboard";
 import { actionToggleHandTool } from "../actions/actionCanvas";
+import {
+  setContainerIdToStorage,
+  setContainerNameToStorage,
+} from "../excalidraw-app/data/localStorage";
 
 const deviceContextInitialValue = {
   isSmScreen: false,
@@ -423,6 +427,9 @@ class App extends React.Component<AppProps, AppState> {
     };
 
     this.id = nanoid();
+
+    setContainerIdToStorage(this.id);
+    setContainerNameToStorage(name);
 
     this.library = new Library(this);
     if (excalidrawRef) {

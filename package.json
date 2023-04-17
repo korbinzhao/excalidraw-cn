@@ -40,6 +40,7 @@
     "image-blob-reduce": "3.0.1",
     "jotai": "1.6.4",
     "lodash.throttle": "4.1.1",
+    "moment": "2.29.4",
     "nanoid": "3.3.3",
     "open-color": "1.9.1",
     "pako": "1.0.11",
@@ -130,5 +131,6 @@
     "autorelease": "node scripts/autorelease.js",
     "prerelease": "node scripts/prerelease.js",
     "release": "node scripts/release.js"
-  }
+  },
+  "repository": "git@github.com:korbinzhao/handraw.git"
 }
