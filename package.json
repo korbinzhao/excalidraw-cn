@@ -19,6 +19,7 @@
     ]
   },
   "dependencies": {
+    "@ant-design/icons": "5.0.1",
     "@dwelle/tunnel-rat": "0.1.1",
     "@sentry/browser": "6.2.5",
     "@sentry/integrations": "6.2.5",
@@ -30,6 +31,7 @@
     "@types/react": "18.0.15",
     "@types/react-dom": "18.0.6",
     "@types/socket.io-client": "1.4.36",
+    "antd": "5.4.2",
     "browser-fs-access": "0.29.1",
     "clsx": "1.1.1",
     "cross-env": "7.0.3",

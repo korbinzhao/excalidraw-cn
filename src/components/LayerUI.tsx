@@ -13,8 +13,8 @@ import { isShallowEqual, muteFSAbortError } from "../utils";
 import { SelectedShapeActions, ShapesSwitcher } from "./Actions";
 import { ErrorDialog } from "./ErrorDialog";
 import { ExportCB, ImageExportDialog } from "./ImageExportDialog";
-import { SwitchSceneDialog } from "./SwitchSceneDialog";
-import { NewSceneDialog } from "./NewSceneDialog";
+import { SwitchSceneDialog } from "./SwitchContainerDialog";
+import { NewSceneDialog } from "./NewContainerDialog";
 import { FixedSideContainer } from "./FixedSideContainer";
 import { HintViewer } from "./HintViewer";
 import { Island } from "./Island";
@@ -48,8 +48,11 @@ import { ActiveConfirmDialog } from "./ActiveConfirmDialog";
 import { HandButton } from "./HandButton";
 import { isHandToolActive } from "../appState";
 import { TunnelsContext, useInitializeTunnels } from "./context/tunnels";
-import { STORAGE_KEYS } from "../excalidraw-app/app_constants";
-import { getContainerNameFromStorage } from "../excalidraw-app/data/localStorage";
+import {
+  getContainerNameFromStorage,
+  renameContainerNameToStorage,
+} from "../excalidraw-app/data/localStorage";
+import InputPreview from "./InputPreview";
 
 interface LayerUIProps {
   actionManager: ActionManager;
@@ -258,6 +261,8 @@ const LayerUI = ({
       elements,
     );
 
+    const currentContainerName = getContainerNameFromStorage();
+
     return (
       <FixedSideContainer side="top">
         <div className="App-menu App-menu_top">
@@ -267,9 +272,16 @@ const LayerUI = ({
               "disable-pointerEvents": appState.zenModeEnabled,
             })}
           >
-            {renderCanvasActions()}
+            <Stack.Row gap={6} align="center">
+              {renderCanvasActions()}
+              <InputPreview
+                defaultValue={currentContainerName}
+                onSave={(value) => {
+                  renameContainerNameToStorage(currentContainerName, value);
+                }}
+              />
+            </Stack.Row>
             {shouldRenderSelectedShapeActions && renderSelectedShapeActions()}
-            <span>名称: {getContainerNameFromStorage()}</span>
           </Stack.Col>
           {!appState.viewModeEnabled && (
             <Section heading="shapes" className="shapes-section">

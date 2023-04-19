@@ -40,8 +40,6 @@ export const importFromLocalStorage = () => {
 
   const currentContainerName = getContainerNameFromStorage();
 
-  console.log("--- importFromLocalStorage ---", currentContainerName);
-
   try {
     // savedElements = localStorage.getItem(STORAGE_KEYS.LOCAL_STORAGE_ELEMENTS);
     savedElements = localStorage.getItem(currentContainerName);
@@ -140,18 +138,19 @@ export const getContainerIdFromStorage = () => {
 export const getContainerNameFromStorage = () => {
   return (
     localStorage.getItem(STORAGE_KEYS.LOCAL_STORAGE_CONTAINER_NAME) ||
-    STORAGE_KEYS.LOCAL_STORAGE_CONTAINER_NAME
+    STORAGE_KEYS.LOCAL_STORAGE_DEFAULT_CONTAINER_NAME
   );
 };
 
-export const getContainerListFromStorage = () => {
+export const getContainerListFromStorage = (): string[] => {
   try {
     return JSON.parse(
-      localStorage.getItem(STORAGE_KEYS.LOCAL_STORAGE_CONTAINER_LIST) || "[]",
+      localStorage.getItem(STORAGE_KEYS.LOCAL_STORAGE_CONTAINER_LIST) ||
+        `[${STORAGE_KEYS.LOCAL_STORAGE_DEFAULT_CONTAINER_NAME}]`,
     );
   } catch (err) {
     console.error("localStorage getContainerList error", err);
-    return [];
+    return [STORAGE_KEYS.LOCAL_STORAGE_DEFAULT_CONTAINER_NAME];
   }
 };
 
@@ -170,5 +169,48 @@ export const getElementsFromStorage = () => {
 
 export const setElementsToStorage = (elements = []) => {
   const currentContainerName = getContainerNameFromStorage();
+
   localStorage.setItem(currentContainerName, JSON.stringify(elements));
+};
+
+export const renameContainerNameToStorage = (
+  oldName: string,
+  newName: string,
+) => {
+  if (!(oldName && newName)) {
+    console.warn(
+      `oldName: ${oldName}, newName: ${newName} 不同时存在，无法重命名`,
+    );
+  }
+
+  const elements = getElementsFromStorage();
+
+  setContainerNameToStorage(newName);
+
+  setElementsToStorage(elements);
+
+  localStorage.removeItem(oldName);
+
+  const containerList = getContainerListFromStorage();
+
+  const newContainerList = containerList.map((name: string) => {
+    if (name === oldName) {
+      return oldName;
+    }
+    return name;
+  });
+
+  setContainerListToStorage(newContainerList);
+};
+
+export const removeContainerFromStorage = (containerName: string) => {
+  localStorage.removeItem(containerName);
+
+  const containerList = getContainerListFromStorage();
+
+  const newContainerList = containerList.filter((name: string) => {
+    return name !== containerName;
+  });
+
+  setContainerListToStorage(newContainerList);
 };

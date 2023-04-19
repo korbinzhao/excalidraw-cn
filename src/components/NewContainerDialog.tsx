@@ -5,12 +5,14 @@ import { Dialog } from "./Dialog";
 import "./ExportDialog.scss";
 import { ActionManager } from "../actions/manager";
 import { Button } from "./Button";
+import { message } from "antd";
 import {
   getContainerListFromStorage,
   setContainerNameToStorage,
   setContainerListToStorage,
+  setElementsToStorage,
 } from "../excalidraw-app/data/localStorage";
-import moment from 'moment';
+import { RESVERED_LOCALSTORAGE_KEYS } from "../excalidraw-app/app_constants";
 
 export const NewSceneDialog = ({
   // elements,
@@ -31,9 +33,7 @@ export const NewSceneDialog = ({
     setAppState({ openDialog: null });
   }, [setAppState]);
 
-  const [newContainerName, setNewContainerName] = useState(
-    `new_scene_${moment().format('YYYY-MM-DD')}`,
-  );
+  const [newContainerName, setNewContainerName] = useState(appState.name);
 
   return (
     <>
@@ -61,16 +61,20 @@ export const NewSceneDialog = ({
               const containerList: string[] = getContainerListFromStorage();
 
               if (containerList.includes(newContainerName)) {
-                alert(`画布 ${newContainerName} 已存在，无需重复创建`);
+                message.error(`画布 ${newContainerName} 已存在，无需重复创建`);
                 return;
               }
 
-              setAppState({
-                openDialog: null,
-              });
+              if (RESVERED_LOCALSTORAGE_KEYS.includes(newContainerName)) {
+                message.error(`请不要以 excalidraw_ 开头进行画布命名`);
+                return;
+              }
 
               setContainerNameToStorage(newContainerName);
               setContainerListToStorage([...containerList, newContainerName]);
+              setElementsToStorage([]);
+
+              window.location.reload();
             }}
           >
             {t("buttons.confirm")}

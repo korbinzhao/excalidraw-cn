@@ -17,6 +17,7 @@ import {
   usersIcon,
 } from "../icons";
 import { GithubIcon, DiscordIcon, TwitterIcon } from "../icons";
+import { FileAddOutlined, SwitcherOutlined } from "@ant-design/icons";
 import DropdownMenuItem from "../dropdownMenu/DropdownMenuItem";
 import DropdownMenuItemLink from "../dropdownMenu/DropdownMenuItemLink";
 import {
@@ -37,7 +38,7 @@ export const NewScene = () => {
 
   return (
     <DropdownMenuItem
-      icon={LoadIcon}
+      icon={<FileAddOutlined />}
       onSelect={() => setAppState({ openDialog: "newScene" })}
       data-testid="recent-scenes-button"
       shortcut={getShortcutFromShortcutName("newScene")}
@@ -53,7 +54,7 @@ export const SwitchScene = () => {
 
   return (
     <DropdownMenuItem
-      icon={LoadIcon}
+      icon={<SwitcherOutlined />}
       onSelect={() => setAppState({ openDialog: "switchScene" })}
       data-testid="recent-scenes-button"
       shortcut={getShortcutFromShortcutName("switchScene")}
