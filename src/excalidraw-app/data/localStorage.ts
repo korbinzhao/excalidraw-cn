@@ -195,7 +195,7 @@ export const renameContainerNameToStorage = (
 
   const newContainerList = containerList.map((name: string) => {
     if (name === oldName) {
-      return oldName;
+      return newName;
     }
     return name;
   });
