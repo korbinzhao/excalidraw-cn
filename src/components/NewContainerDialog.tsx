@@ -1,6 +1,6 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useState } from "react";
 import { t } from "../i18n";
-import { AppState, BinaryFiles } from "../types";
+import { AppState } from "../types";
 import { Dialog } from "./Dialog";
 import "./ExportDialog.scss";
 import { ActionManager } from "../actions/manager";

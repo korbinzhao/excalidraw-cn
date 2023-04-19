@@ -430,8 +430,6 @@ class App extends React.Component<AppProps, AppState> {
 
     setContainerIdToStorage(this.id);
 
-    console.log("--- name ---", name);
-
     setContainerNameToStorage(name);
 
     this.library = new Library(this);
