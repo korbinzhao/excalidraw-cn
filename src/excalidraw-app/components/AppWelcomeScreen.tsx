@@ -38,14 +38,14 @@ export const AppWelcomeScreen: React.FC<{
       <WelcomeScreen.Hints.ToolbarHint />
       <WelcomeScreen.Hints.HelpHint />
       <WelcomeScreen.Center>
-        <WelcomeScreen.Center.Logo />
+        {/* <WelcomeScreen.Center.Logo /> */}
         <WelcomeScreen.Center.Heading>
           {headingContent}
         </WelcomeScreen.Center.Heading>
         <WelcomeScreen.Center.Menu>
           <WelcomeScreen.Center.MenuItemLoadScene />
           <WelcomeScreen.Center.MenuItemHelp />
-          <WelcomeScreen.Center.MenuItemLiveCollaborationTrigger
+          {/* <WelcomeScreen.Center.MenuItemLiveCollaborationTrigger
             onSelect={() => props.setCollabDialogShown(true)}
           />
           {!isExcalidrawPlusSignedUser && (
@@ -56,7 +56,7 @@ export const AppWelcomeScreen: React.FC<{
             >
               Try Excalidraw Plus!
             </WelcomeScreen.Center.MenuItemLink>
-          )}
+          )} */}
         </WelcomeScreen.Center.Menu>
       </WelcomeScreen.Center>
     </WelcomeScreen>

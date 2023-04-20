@@ -170,7 +170,9 @@
     "remove": "",
     "publishLibrary": "",
     "submit": "",
-    "confirm": ""
+    "confirm": "",
+    "switchScene": "",
+    "newScene": ""
   },
   "alerts": {
     "clearReset": "【‼️ 警告 ‼️ 無法復原的動作】你確定要清空呢塊畫布嗎？",

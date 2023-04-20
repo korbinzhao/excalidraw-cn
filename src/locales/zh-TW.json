@@ -170,7 +170,9 @@
     "remove": "刪除",
     "publishLibrary": "發布",
     "submit": "送出",
-    "confirm": "確認"
+    "confirm": "確認",
+    "switchScene": "切換畫布",
+    "newScene": "新建畫布"
   },
   "alerts": {
     "clearReset": "這將會清除整個 canvas。你確定嗎？",
@@ -371,7 +373,7 @@
   },
   "encrypted": {
     "tooltip": "你的作品已使用 end-to-end 方式加密，Excalidraw 的伺服器也無法取得其內容。",
-    "link": "Excalidraw 端到端加密的相關部落格文章"
+    "link": "Handraw 端到端加密的相關部落格文章"
   },
   "stats": {
     "angle": "角度",

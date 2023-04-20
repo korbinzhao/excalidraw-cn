@@ -184,7 +184,7 @@
     "cannotExportEmptyCanvas": "无法导出空白画布。",
     "couldNotCopyToClipboard": "无法复制到剪贴板。",
     "decryptFailed": "无法解密数据。",
-    "uploadedSecurly": "上传已被端到端加密保护，这意味着 Excalidraw 的服务器和第三方都无法读取内容。",
+    "uploadedSecurly": "上传已被端到端加密保护，这意味着 Handraw 的服务器和第三方都无法读取内容。",
     "loadSceneOverridePrompt": "加载外部绘图将取代您现有的内容。您想要继续吗？",
     "collabStopOverridePrompt": "停止会话将覆盖您先前本地存储的绘图。 您确定吗？\n\n(如果您想保持本地绘图，只需关闭浏览器选项卡。)",
     "errorAddingToLibrary": "无法将项目添加到素材库中",
@@ -192,7 +192,7 @@
     "confirmAddLibrary": "这将添加 {{numShapes}} 个形状到您的素材库中。您确定吗？",
     "imageDoesNotContainScene": "此图像似乎不包含任何画布数据。您是否在导出时启用了画布嵌入功能？",
     "cannotRestoreFromImage": "无法从此图像文件恢复画布",
-    "invalidSceneUrl": "无法从提供的 URL 导入场景。它或者格式不正确，或者不包含有效的 Excalidraw JSON 数据。",
+    "invalidSceneUrl": "无法从提供的 URL 导入场景。它或者格式不正确，或者不包含有效的 Handraw JSON 数据。",
     "resetLibrary": "这将会清除你的素材库。你确定要这么做吗？",
     "removeItemsFromsLibrary": "确定要从素材库中删除 {{count}} 个项目吗？",
     "invalidEncryptionKey": "密钥必须包含22个字符。实时协作已被禁用。"
@@ -373,7 +373,7 @@
     "removeItemsFromLib": "从素材库中删除选中的项目"
   },
   "encrypted": {
-    "tooltip": "您的绘图采用的端到端加密，其内容对于Excalidraw服务器是不可见的。",
+    "tooltip": "您的绘图采用的端到端加密，其内容对于服务器是不可见的。",
     "link": "Excalidraw 中关于端到端加密的博客"
   },
   "stats": {

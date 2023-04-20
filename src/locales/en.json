@@ -146,7 +146,7 @@
     "scale": "Scale",
     "save": "Save to current file",
     "saveAs": "Save as",
-    "load": "Open",
+    "load": "Open File",
     "getShareableLink": "Get shareable link",
     "close": "Close",
     "selectLanguage": "Select language",
@@ -171,7 +171,9 @@
     "remove": "Remove",
     "publishLibrary": "Publish",
     "submit": "Submit",
-    "confirm": "Confirm"
+    "confirm": "Confirm",
+    "switchScene": "Switch Scene",
+    "newScene": "New Scene"
   },
   "alerts": {
     "clearReset": "This will clear the whole canvas. Are you sure?",

@@ -10,7 +10,7 @@ import { isDarwin, isFirefox, isWindows } from "../constants";
 
 const Header = () => (
   <div className="HelpDialog__header">
-    <a
+    {/* <a
       className="HelpDialog__btn"
       href="https://github.com/excalidraw/excalidraw#documentation"
       target="_blank"
@@ -18,8 +18,8 @@ const Header = () => (
     >
       {t("helpDialog.documentation")}
       <div className="HelpDialog__link-icon">{ExternalLinkIcon}</div>
-    </a>
-    <a
+    </a> */}
+    {/* <a
       className="HelpDialog__btn"
       href="https://blog.excalidraw.com"
       target="_blank"
@@ -27,10 +27,10 @@ const Header = () => (
     >
       {t("helpDialog.blog")}
       <div className="HelpDialog__link-icon">{ExternalLinkIcon}</div>
-    </a>
+    </a> */}
     <a
       className="HelpDialog__btn"
-      href="https://github.com/excalidraw/excalidraw/issues"
+      href="https://forms.gle/UnihxVUz5WJVY3J2A"
       target="_blank"
       rel="noopener noreferrer"
     >
