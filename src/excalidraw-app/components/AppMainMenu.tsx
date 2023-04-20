@@ -1,5 +1,5 @@
 import React from "react";
-import { PlusPromoIcon } from "../../components/icons";
+// import { PlusPromoIcon } from "../../components/icons";
 import { MainMenu } from "../../packages/excalidraw/index";
 import { LanguageList } from "./LanguageList";
 

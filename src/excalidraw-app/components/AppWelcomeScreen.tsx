@@ -1,5 +1,5 @@
 import React from "react";
-import { PlusPromoIcon } from "../../components/icons";
+// import { PlusPromoIcon } from "../../components/icons";
 import { t } from "../../i18n";
 import { WelcomeScreen } from "../../packages/excalidraw/index";
 import { isExcalidrawPlusSignedUser } from "../app_constants";

@@ -24,7 +24,7 @@ import { t } from "../i18n";
 import {
   Excalidraw,
   defaultLang,
-  LiveCollaborationTrigger,
+  // LiveCollaborationTrigger,
 } from "../packages/excalidraw/index";
 import {
   AppState,

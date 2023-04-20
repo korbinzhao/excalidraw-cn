@@ -1,2 +1,3 @@
 #!/bin/sh
 # yarn lint-staged
+npm run fix
