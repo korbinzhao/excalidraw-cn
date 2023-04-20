@@ -76,7 +76,7 @@ it("clones text element", () => {
     opacity: 100,
     text: "hello",
     fontSize: 20,
-    fontFamily: FONT_FAMILY["Virgil, HanziPen SC, KaiTi"],
+    fontFamily: FONT_FAMILY["Virgil, HanziPen SC, Zhushiti, KaiTi"],
     textAlign: "left",
     verticalAlign: "top",
   });

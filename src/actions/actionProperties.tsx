@@ -661,7 +661,7 @@ export const actionChangeFontFamily = register({
       icon: JSX.Element;
     }[] = [
       {
-        value: FONT_FAMILY["Virgil, HanziPen SC, KaiTi"],
+        value: FONT_FAMILY["Virgil, HanziPen SC, Zhushiti, KaiTi"],
         text: t("labels.handDrawn"),
         icon: FreedrawIcon,
       },
