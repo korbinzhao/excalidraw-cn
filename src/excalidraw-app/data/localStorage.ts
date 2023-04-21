@@ -161,13 +161,17 @@ export const setContainerListToStorage = (list: string[] = []) => {
   );
 };
 
-export const getElementsFromStorage = () => {
+export const getElementsFromStorage = (
+  containerName?: string,
+): ExcalidrawElement[] => {
   const currentContainerName = getContainerNameFromStorage();
 
-  return JSON.parse(localStorage.getItem(currentContainerName) || "[]");
+  return JSON.parse(
+    localStorage.getItem(containerName || currentContainerName) || "[]",
+  );
 };
 
-export const setElementsToStorage = (elements = []) => {
+export const setElementsToStorage = (elements: ExcalidrawElement[] = []) => {
   const currentContainerName = getContainerNameFromStorage();
 
   localStorage.setItem(currentContainerName, JSON.stringify(elements));
@@ -213,4 +217,14 @@ export const removeContainerFromStorage = (containerName: string) => {
   });
 
   setContainerListToStorage(newContainerList);
+};
+
+export const getAllContainerListElementsFromStorage = () => {
+  const containerList = getContainerListFromStorage();
+
+  return containerList.reduce((prevElements, containerName) => {
+    const _elements = getElementsFromStorage(containerName);
+
+    return [...prevElements, ..._elements];
+  }, [] as ExcalidrawElement[]);
 };
