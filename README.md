@@ -3,11 +3,13 @@
 ### Try it now
 
 访问 [Handraw](https://handraw.top/) 免费使用。
+Visit [Handraw](https://handraw.top/) to use free。
 
-效果示例：
-
-- ![](https://img.alicdn.com/imgextra/i2/O1CN01rOeDDY1sPDO58CLLB_!!6000000005758-2-tps-546-438.png)
-- ![](https://img.alicdn.com/imgextra/i1/O1CN01yfRQ6w1ijEXfHX91Z_!!6000000004448-2-tps-744-452.png)
+#### Chinese Handwrite 中文手写效果
+![](https://img.alicdn.com/imgextra/i2/O1CN01rOeDDY1sPDO58CLLB_!!6000000005758-2-tps-546-438.png)
+![](https://img.alicdn.com/imgextra/i1/O1CN01yfRQ6w1ijEXfHX91Z_!!6000000004448-2-tps-744-452.png)
+#### Multiple Canvas 多画布能力
+![](https://img.alicdn.com/imgextra/i2/O1CN01vGnzBy1kFa8ksoEGt_!!6000000004654-0-tps-1272-1020.jpg)
 
 ### Local Installation
 
