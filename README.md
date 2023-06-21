@@ -1,5 +1,7 @@
 ![](https://img.alicdn.com/imgextra/i4/O1CN01j6if671FAJUi4WFWO_!!6000000000446-2-tps-2458-593.png)
 
+A whiteboard supporting Chinese hand draw effect and multi-canvas based on excalidraw.
+
 ### Try it now
 
 访问 [Handraw](https://handraw.top/) 免费使用。 Visit [Handraw](https://handraw.top/) to use free。
