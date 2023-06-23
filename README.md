@@ -3,8 +3,8 @@
 A whiteboard supporting Chinese hand draw effect and multi-canvas based on excalidraw.
 
 ### Try it now
-
-访问 [Handraw](https://handraw.top/) 免费使用。 Visit [Handraw](https://handraw.top/) to use free。
+- Visit [Handraw](https://handraw.top/) to use free.
+- 访问 [Handraw](https://handraw.top/) 免费使用。 
 
 #### Chinese Handwrite 中文手写效果
 
@@ -98,5 +98,11 @@ docker-compose up --build -d
 
 Pull requests are welcome. For major changes, please [open an issue](https://github.com/korbinzhao/excalidraw-cn/issues/new) first to discuss what you would like to change.
 
+## 投喂猫粮
+国内小伙伴欢迎直接「<a href="https://afdian.net/a/wantian" target="_blank">投喂猫粮</a>」。
+
 ## Buy me a coffee
 <a href="https://www.buymeacoffee.com/korbinzhao" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="39" width="175"></a>
+
+
+
