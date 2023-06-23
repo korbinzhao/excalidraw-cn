@@ -97,3 +97,6 @@ docker-compose up --build -d
 ## Contributing
 
 Pull requests are welcome. For major changes, please [open an issue](https://github.com/korbinzhao/excalidraw-cn/issues/new) first to discuss what you would like to change.
+
+## Buy me a coffee
+<a href="https://www.buymeacoffee.com/korbinzhao" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="39" width="175"></a>
