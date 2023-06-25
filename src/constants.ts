@@ -76,7 +76,7 @@ export const CLASSES = {
 
 // 1-based in case we ever do `if(element.fontFamily)`
 export const FONT_FAMILY = {
-  "Virgil, HanziPen SC, Zhushiti, KaiTi": 1,
+  "Virgil, HanziPen SC, Cangnanshoujiti, KaiTi": 1,
   Helvetica: 2,
   Cascadia: 3,
 };
@@ -90,7 +90,7 @@ export const WINDOWS_EMOJI_FALLBACK_FONT = "Segoe UI Emoji";
 
 export const DEFAULT_FONT_SIZE = 20;
 export const DEFAULT_FONT_FAMILY: FontFamilyValues =
-  FONT_FAMILY["Virgil, HanziPen SC, Zhushiti, KaiTi"];
+  FONT_FAMILY["Virgil, HanziPen SC, Cangnanshoujiti, KaiTi"];
 export const DEFAULT_TEXT_ALIGN = "left";
 export const DEFAULT_VERTICAL_ALIGN = "top";
 export const DEFAULT_VERSION = "{version}";

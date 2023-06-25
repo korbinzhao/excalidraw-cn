@@ -302,11 +302,6 @@ const ExcalidrawWrapper = () => {
         const allContainerListElements =
           getAllContainerListElementsFromStorage();
 
-        console.log(
-          "--- allContainerListElements ---",
-          allContainerListElements,
-        );
-
         const fileIds =
           // data.scene.elements?.reduce((acc, element) => {
           allContainerListElements?.reduce((acc, element) => {
@@ -315,8 +310,6 @@ const ExcalidrawWrapper = () => {
             }
             return acc;
           }, [] as FileId[]) || [];
-
-        console.log("--- fileIds ---", fileIds);
 
         if (data.isExternalScene) {
           loadFilesFromFirebase(

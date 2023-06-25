@@ -146,7 +146,7 @@ export const getContainerListFromStorage = (): string[] => {
   try {
     return JSON.parse(
       localStorage.getItem(STORAGE_KEYS.LOCAL_STORAGE_CONTAINER_LIST) ||
-        `[${STORAGE_KEYS.LOCAL_STORAGE_DEFAULT_CONTAINER_NAME}]`,
+        `["${STORAGE_KEYS.LOCAL_STORAGE_DEFAULT_CONTAINER_NAME}"]`,
     );
   } catch (err) {
     console.error("localStorage getContainerList error", err);
