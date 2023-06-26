@@ -1,8 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-TT4QDTQQ88"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-TT4QDTQQ88");
+    </script>
+    <meta name="baidu-site-verification" content="codeva-Vy5uUMrzy4" />
     <meta charset="utf-8" />
-    <title>Excalidraw | Hand-drawn look & feel • Collaborative • Secure</title>
+    <title>Handraw | 中文友好的手写效果白板工具</title>
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover, shrink-to-fit=no"
@@ -14,57 +29,60 @@
     <!-- Primary Meta Tags -->
     <meta
       name="title"
-      content="Excalidraw — Collaborative whiteboarding made easy"
+      content="Handraw — Collaborative whiteboarding made easy"
     />
     <meta
       name="description"
-      content="Excalidraw is a virtual collaborative whiteboard tool that lets you easily sketch diagrams that have a hand-drawn feel to them."
+      content="Handraw is a virtual collaborative whiteboard tool that lets you easily sketch diagrams that have a hand-drawn feel to them."
     />
-    <meta name="image" content="https://excalidraw.com/og-general-v1.png" />
+    <meta
+      name="image"
+      content="https://img.alicdn.com/imgextra/i1/O1CN01TfAqYJ22B9OREUW1b_!!6000000007081-2-tps-2458-593.png"
+    />
 
     <!-- Open Graph / Facebook -->
-    <meta property="og:site_name" content="Excalidraw" />
+    <meta property="og:site_name" content="Handraw" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://excalidraw.com" />
+    <meta property="og:url" content="https://handraw.top" />
     <meta
       property="og:title"
-      content="Excalidraw — Collaborative whiteboarding made easy"
+      content="Handraw — Collaborative whiteboarding made easy"
     />
-    <meta property="og:image:alt" content="Excalidraw logo" />
+    <meta property="og:image:alt" content="Handraw logo" />
     <meta
       property="og:description"
-      content="Excalidraw is a virtual collaborative whiteboard tool that lets you easily sketch diagrams that have a hand-drawn feel to them."
+      content="Handraw is a virtual collaborative whiteboard tool that lets you easily sketch diagrams that have a hand-drawn feel to them."
     />
-    <meta property="og:image" content="https://excalidraw.com/og-fb-v1.png" />
+    <meta
+      property="og:image"
+      content="https://img.alicdn.com/imgextra/i1/O1CN01TfAqYJ22B9OREUW1b_!!6000000007081-2-tps-2458-593.png"
+    />
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:site" content="@excalidraw" />
-    <meta property="twitter:url" content="https://excalidraw.com" />
+    <meta property="twitter:site" content="@korbinzhao" />
+    <meta property="twitter:url" content="https://handraw.top" />
     <meta
       property="twitter:title"
-      content="Excalidraw — Collaborative whiteboarding made easy"
+      content="Handraw — 支持中文手写效果的白板工具"
     />
     <meta
       property="twitter:description"
-      content="Excalidraw is a virtual collaborative whiteboard tool that lets you easily sketch diagrams that have a hand-drawn feel to them."
+      content="Handraw is a virtual collaborative whiteboard tool that lets you easily sketch diagrams that have a hand-drawn feel to them."
     />
     <meta
       property="twitter:image"
-      content="https://excalidraw.com/og-twitter-v1.png"
+      content="https://img.alicdn.com/imgextra/i1/O1CN01TfAqYJ22B9OREUW1b_!!6000000007081-2-tps-2458-593.png"
     />
 
-    <!-- General tags -->
     <meta
       name="description"
-      content="Excalidraw is a virtual collaborative whiteboard tool that lets you easily sketch diagrams that have a hand-drawn feel to them."
+      content="Handraw is a virtual collaborative whiteboard tool that lets you easily sketch diagrams that have a hand-drawn feel to them."
     />
 
-    <!------------------------------------------------------------------------->
     <!--   to minimize white flash on load when user has dark mode enabled   -->
     <script>
       try {
-        //
         const theme = window.localStorage.getItem("excalidraw-theme");
         if (theme === "dark") {
           document.documentElement.classList.add("dark");
@@ -77,32 +95,9 @@
         color: #fff;
       }
     </style>
-    <!------------------------------------------------------------------------->
-
-    <% if (process.env.NODE_ENV === "production") { %>
-    <script>
-      // Redirect Excalidraw+ users which have auto-redirect enabled.
-      //
-      // Redirect only the bare root path, so link/room/library urls are not
-      // redirected.
-      //
-      // Putting into index.html for best performance (can't redirect on server
-      // due to location.hash checks).
-      if (
-        window.location.pathname === "/" &&
-        !window.location.hash &&
-        !window.location.search &&
-        // if its present redirect
-        document.cookie.includes("excplus-autoredirect=true")
-      ) {
-        window.location.href = "https://app.excalidraw.com";
-      }
-    </script>
-    <% } %>
 
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 
-    <!-- Excalidraw version -->
     <meta name="version" content="{version}" />
 
     <link
@@ -148,6 +143,21 @@
       // setting this so that libraries installation reuses this window tab.
       window.name = "_excalidraw";
     </script>
+    <% if (process.env.REACT_APP_DISABLE_TRACKING !=='true' &&
+    process.env.REACT_APP_GOOGLE_ANALYTICS_ID) { %>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=%REACT_APP_GOOGLE_ANALYTICS_ID%"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "%REACT_APP_GOOGLE_ANALYTICS_ID%");
+    </script>
+    <% } %>
 
     <!-- FIXME: remove this when we update CRA (fix SW caching) -->
     <style>
@@ -197,42 +207,13 @@
   <body>
     <noscript> You need to enable JavaScript to run this app. </noscript>
     <header>
-      <h1 class="visually-hidden">Excalidraw</h1>
+      <h1 class="visually-hidden">Handraw</h1>
     </header>
     <div id="root"></div>
-    <% if (process.env.REACT_APP_DISABLE_TRACKING !== 'true') { %>
-    <!-- 100% privacy friendly analytics -->
-    <script>
-      // need to load this script dynamically bcs. of iframe embed tracking
-      var scriptEle = document.createElement("script");
-      scriptEle.setAttribute(
-        "src",
-        "https://scripts.simpleanalyticscdn.com/latest.js",
-      );
-      scriptEle.setAttribute("type", "text/javascript");
-      scriptEle.setAttribute("defer", true);
-      scriptEle.setAttribute("async", true);
-      // if iframe
-      if (window.self !== window.top) {
-        scriptEle.setAttribute("data-auto-collect", true);
-      }
-
-      document.body.appendChild(scriptEle);
-
-      // if iframe
-      if (window.self !== window.top) {
-        scriptEle.addEventListener("load", () => {
-          if (window.sa_pageview) {
-            window.window.sa_event(action, {
-              category: "iframe",
-              label: "embed",
-              value: window.location.pathname,
-            });
-          }
-        });
-      }
-    </script>
-    <!-- end LEGACY GOOGLE ANALYTICS -->
-    <% } %>
+    <iframe
+      src="https://handraw-server.deno.dev/stastic"
+      frameborder="0"
+      style="visibility: hidden"
+    ></iframe>
   </body>
 </html>
