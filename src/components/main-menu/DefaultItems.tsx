@@ -237,21 +237,21 @@ export const Socials = () => (
   <>
     <DropdownMenuItemLink
       icon={GithubIcon}
-      href="https://github.com/excalidraw/excalidraw"
+      href="https://github.com/korbinzhao/excalidraw-cn"
       aria-label="GitHub"
     >
       GitHub
     </DropdownMenuItemLink>
-    <DropdownMenuItemLink
+    {/* <DropdownMenuItemLink
       icon={DiscordIcon}
       href="https://discord.gg/UexuTaE"
       aria-label="Discord"
     >
       Discord
-    </DropdownMenuItemLink>
+    </DropdownMenuItemLink> */}
     <DropdownMenuItemLink
       icon={TwitterIcon}
-      href="https://twitter.com/excalidraw"
+      href="https://twitter.com/korbinzhao"
       aria-label="Twitter"
     >
       Twitter

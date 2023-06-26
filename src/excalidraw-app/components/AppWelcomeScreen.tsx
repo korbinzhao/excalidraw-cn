@@ -52,7 +52,7 @@ export const AppWelcomeScreen: React.FC<{
               onSelect={() => props.setCollabDialogShown(true)}
             />
           )}
-          {!isExcalidrawPlusSignedUser && (
+          {/* {!isExcalidrawPlusSignedUser && (
             <WelcomeScreen.Center.MenuItemLink
               href="https://plus.excalidraw.com/plus?utm_source=excalidraw&utm_medium=app&utm_content=welcomeScreenGuest"
               shortcut={null}
@@ -60,7 +60,7 @@ export const AppWelcomeScreen: React.FC<{
             >
               Try Excalidraw Plus!
             </WelcomeScreen.Center.MenuItemLink>
-          )}
+          )} */}
         </WelcomeScreen.Center.Menu>
       </WelcomeScreen.Center>
     </WelcomeScreen>
