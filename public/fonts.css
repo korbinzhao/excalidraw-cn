@@ -39,7 +39,7 @@
 
 @font-face {
   font-family: "Cangnanshoujiti";
-  src: url("YeZiGongChangCangNanShouJi-2.ttf");
+  src: url("YeZiGongChangCangNanShouJi-2.ttf"), format("truetype");
   font-display: swap;
-  font-weight: 700;
+  font-weight: 900;
 }
