@@ -12,9 +12,8 @@ A whiteboard supporting Chinese hand draw effect and multi-canvas based on excal
 ![](https://img.alicdn.com/imgextra/i2/O1CN01rOeDDY1sPDO58CLLB_!!6000000005758-2-tps-546-438.png) ![](https://img.alicdn.com/imgextra/i1/O1CN01yfRQ6w1ijEXfHX91Z_!!6000000004448-2-tps-744-452.png)
 
 #### Windows 系统中文手写效果
-MacOS 系统和 Windows 系统下中文手写字体不同，前文展示效果为 MacOS 效果，这里的展示效果为 Windows 效果。
-![image](https://github.com/korbinzhao/excalidraw-cn/assets/5051627/cd73fb34-2957-4a58-a533-98abb21162ab)
 
+MacOS 系统和 Windows 系统下中文手写字体不同，前文展示效果为 MacOS 效果，这里的展示效果为 Windows 效果。 ![image](https://github.com/korbinzhao/excalidraw-cn/assets/5051627/cd73fb34-2957-4a58-a533-98abb21162ab)
 
 #### Multiple Canvas 多画布能力
 
