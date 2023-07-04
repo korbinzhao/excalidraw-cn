@@ -68,8 +68,8 @@ module.exports = {
                 "@babel/plugin-transform-runtime",
               ],
             },
-          },
-        ],
+          }
+        ]
       },
       {
         test: /\.(woff|woff2|eot|ttf|otf)$/,
