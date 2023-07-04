@@ -190,6 +190,10 @@ export const exportToSvg = async (
         font-family: "Cascadia";
         src: url("${assetPath}Cascadia.woff2");
       }
+      @font-face {
+        font-family: "Cangnanshoujiti";
+        src: url("${assetPath}YeZiGongChangCangNanShouJi-2.ttf");
+      }
     </style>
     ${exportingFrameClipPath}
   </defs>
