@@ -9,11 +9,14 @@ A whiteboard supporting Chinese hand writing style and multi-canvas based on exc
 
 #### Chinese Handwriting Style（中文手写效果）
 
-![](https://img.alicdn.com/imgextra/i4/O1CN01FV8dTZ1UmWmnYbwGs_!!6000000002560-0-tps-2854-1656.jpg)
-![](https://img.alicdn.com/imgextra/i4/O1CN01FV8dTZ1UmWmnYbwGs_!!6000000002560-0-tps-2854-1656.jpg)
+![image](https://github.com/korbinzhao/excalidraw-cn/assets/5051627/d8d78cfa-1d11-44de-b092-5b953bfcb478)
+
+
+![](https://img.alicdn.com/imgextra/i2/O1CN01qzpYPQ1Y3sdSNmbEe_!!6000000003004-0-tps-2870-1650.jpg)
 
 #### Windows System Support（Windows 支持）
 The Chinese handwriting fonts are different between MacOS and Windows systems. The displayed effect in the previous section is for MacOS, while the displayed effect here is for Windows.
+
 MacOS 系统和 Windows 系统下中文手写字体不同，前文展示效果为 MacOS 效果，这里的展示效果为 Windows 效果。
 ![image](https://github.com/korbinzhao/excalidraw-cn/assets/5051627/cd73fb34-2957-4a58-a533-98abb21162ab)
 
