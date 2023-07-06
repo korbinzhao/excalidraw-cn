@@ -1,4 +1,4 @@
-![](https://img.alicdn.com/imgextra/i4/O1CN01j6if671FAJUi4WFWO_!!6000000000446-2-tps-2458-593.png)
+![](https://img.alicdn.com/imgextra/i3/O1CN01Fj9ngw1N77fY1yafL_!!6000000001522-2-tps-1639-395.png)
 
 A whiteboard supporting Chinese hand writing style and multi-canvas based on excalidraw.
 
