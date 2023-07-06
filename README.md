@@ -4,8 +4,8 @@ A whiteboard supporting Chinese hand writing style and multi-canvas based on exc
 
 ### Try it now
 
-- Visit [Handraw](https://handraw.top/) to use free.
-- 访问 [Handraw](https://handraw.top/) 免费使用。
+- Visit [handraw.top](https://handraw.top/) to use free.
+- 访问 [handraw.top](https://handraw.top/) 免费使用。
 
 #### Chinese Handwriting Style（中文手写效果）
 
