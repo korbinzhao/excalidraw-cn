@@ -9,7 +9,7 @@ A whiteboard supporting Chinese hand writing style and multi-canvas based on exc
 
 #### Chinese Handwriting Style（中文手写效果）
 
-![image](https://github.com/korbinzhao/excalidraw-cn/assets/5051627/d8d78cfa-1d11-44de-b092-5b953bfcb478)
+![](https://img.alicdn.com/imgextra/i3/O1CN01TEf1Xy20EEpyKk91j_!!6000000006817-0-tps-2852-1620.jpg)
 
 ![](https://img.alicdn.com/imgextra/i4/O1CN01K0d6K51Iqr8fkojYy_!!6000000000945-0-tps-2876-1640.jpg)
 
