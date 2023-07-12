@@ -13,7 +13,7 @@ A whiteboard supporting Chinese hand writing style and multi-canvas based on exc
 
 Thanks for all the sponsors:
 
-- 二米
+- 二米 - [国产SOAR厂商雾帜智能](https://www.flagify.com/)
 - [爱发电用户\_SFnB](https://afdian.net/u/9ad7f8a01aee11ee808d5254001e7c00)
 
 #### Chinese Handwriting Style（中文手写效果）
