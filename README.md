@@ -8,11 +8,13 @@ A whiteboard supporting Chinese hand writing style and multi-canvas based on exc
 - 访问 [handraw.top](https://handraw.top/) 免费使用。
 
 ### :purple_heart:Sponsors
+
 > Welcome sponsors to contact me for customized advertising information.
 
 Thanks for all the sponsors:
+
 - 二米
-- [爱发电用户_SFnB](https://afdian.net/u/9ad7f8a01aee11ee808d5254001e7c00)
+- [爱发电用户\_SFnB](https://afdian.net/u/9ad7f8a01aee11ee808d5254001e7c00)
 
 #### Chinese Handwriting Style（中文手写效果）
 
@@ -21,10 +23,10 @@ Thanks for all the sponsors:
 ![](https://img.alicdn.com/imgextra/i4/O1CN01K0d6K51Iqr8fkojYy_!!6000000000945-0-tps-2876-1640.jpg)
 
 #### Windows System Support（Windows 支持）
+
 The Chinese handwriting fonts are different between MacOS and Windows systems. The displayed effect in the previous section is for MacOS, while the displayed effect here is for Windows.
 
-MacOS 系统和 Windows 系统下中文手写字体不同，前文展示效果为 MacOS 效果，这里的展示效果为 Windows 效果。
-![image](https://github.com/korbinzhao/excalidraw-cn/assets/5051627/cd73fb34-2957-4a58-a533-98abb21162ab)
+MacOS 系统和 Windows 系统下中文手写字体不同，前文展示效果为 MacOS 效果，这里的展示效果为 Windows 效果。 ![image](https://github.com/korbinzhao/excalidraw-cn/assets/5051627/cd73fb34-2957-4a58-a533-98abb21162ab)
 
 MacOS 系统和 Windows 系统下中文手写字体不同，前文展示效果为 MacOS 效果，这里的展示效果为 Windows 效果。 ![image](https://github.com/korbinzhao/excalidraw-cn/assets/5051627/cd73fb34-2957-4a58-a533-98abb21162ab)
 
