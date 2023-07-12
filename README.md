@@ -9,8 +9,7 @@ A whiteboard supporting Chinese hand writing style and multi-canvas based on exc
 
 ### :purple_heart:Sponsors
 
-> Welcome sponsors to contact me for customized advertising information. 
-> Quick link: <a href="https://afdian.net/a/wantian" target="_blank">投喂猫粮</a> or <a href="https://www.buymeacoffee.com/korbinzhao" target="_blank">Buy me a coffee</a>.
+> Welcome sponsors to contact me for customized advertising information. Quick link: <a href="https://afdian.net/a/wantian" target="_blank">投喂猫粮</a> or <a href="https://www.buymeacoffee.com/korbinzhao" target="_blank">Buy me a coffee</a>.
 
 Thanks for all the sponsors:
 
