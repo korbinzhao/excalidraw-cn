@@ -4,8 +4,12 @@ A whiteboard supporting Chinese hand writing style and multi-canvas based on exc
 
 ### Try it now
 
-- Visit [handraw.top](https://handraw.top/) to use free.
-- 访问 [handraw.top](https://handraw.top/) 免费使用。
+- Online
+  - Visit [handraw.top](https://handraw.top/) to use free.
+  - 访问 [handraw.top](https://handraw.top/) 免费使用。
+- Obsidian Plugin
+  - Comming soon, welcome to Star the plugin repo :point_right: [obsidian-excalidraw-cn-plugin](https://github.com/korbinzhao/obsidian-excalidraw-cn-plugin), v1.0.0 development done, official reviewing.
+  - 开源插件（欢迎 Star :point_right:）[obsidian-excalidraw-cn-plugin](https://github.com/korbinzhao/obsidian-excalidraw-cn-plugin) v1.0.0 开发完成，官方评审中，敬请期待。
 
 ### :purple_heart:Sponsors
 
