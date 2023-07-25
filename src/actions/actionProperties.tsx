@@ -92,6 +92,7 @@ import {
 import { hasStrokeColor } from "../scene/comparisons";
 import { arrayToMap, getShortcutKey } from "../utils";
 import { register } from "./register";
+import { HAND_WRITE_FONTS } from "../constants";
 
 const FONT_SIZE_RELATIVE_INCREASE_STEP = 0.1;
 
@@ -694,7 +695,7 @@ export const actionChangeFontFamily = register({
       icon: JSX.Element;
     }[] = [
       {
-        value: FONT_FAMILY["Virgil, HanziPen SC, Cangnanshoujiti, KaiTi"],
+        value: FONT_FAMILY[HAND_WRITE_FONTS],
         text: t("labels.handDrawn"),
         icon: FreedrawIcon,
       },
@@ -709,6 +710,18 @@ export const actionChangeFontFamily = register({
         icon: FontFamilyCodeIcon,
       },
     ];
+
+     // custom fonts
+     Object.entries(FONT_FAMILY).forEach(([key, value]) => {
+      if (value <= 3) {
+        return;
+      }
+      options.push({
+        value,
+        text: key,
+        icon: <span>{key.slice(0, 3)}</span>,
+      });
+    });
 
     return (
       <fieldset>

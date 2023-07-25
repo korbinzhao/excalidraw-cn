@@ -82,12 +82,25 @@ export const CLASSES = {
   SHAPE_ACTIONS_MENU: "App-menu__left",
 };
 
+export const HAND_WRITE_FONTS = "Virgil, HanziPen SC, Cangnanshoujiti, KaiTi";
+
 // 1-based in case we ever do `if(element.fontFamily)`
-export const FONT_FAMILY = {
-  "Virgil, HanziPen SC, Cangnanshoujiti, KaiTi": 1,
-  Helvetica: 2,
-  Cascadia: 3,
-};
+export const FONT_FAMILY = (() => {
+  const fontFamily: { [key: string]: number } = {
+    Helvetica: 2,
+    Cascadia: 3,
+  };
+
+  fontFamily[HAND_WRITE_FONTS] = 1;
+
+  const customFonts = localStorage.getItem("custom-fonts")?.split(",");
+
+  customFonts?.forEach((fontName, index) => {
+    fontFamily[fontName] = index + 4;
+  });
+
+  return fontFamily;
+})();
 
 export const THEME = {
   LIGHT: "light",
