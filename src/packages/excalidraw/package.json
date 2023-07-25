@@ -1,6 +1,6 @@
 {
   "name": "@handraw/excalidraw",
-  "version": "1.0.0-alpha.6",
+  "version": "1.0.0-alpha.7",
   "main": "main.js",
   "types": "types/packages/excalidraw/index.d.ts",
   "files": [
