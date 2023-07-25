@@ -93,7 +93,7 @@ export const FONT_FAMILY = (() => {
 
   fontFamily[HAND_WRITE_FONTS] = 1;
 
-  const customFonts = localStorage.getItem("custom-fonts")?.split(",");
+  const customFonts = localStorage.getItem("custom_fonts")?.split(",");
 
   customFonts?.forEach((fontName, index) => {
     fontFamily[fontName] = index + 4;
