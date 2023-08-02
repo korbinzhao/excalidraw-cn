@@ -13,7 +13,6 @@ import {
   BOUND_TEXT_PADDING,
   DEFAULT_FONT_FAMILY,
   DEFAULT_FONT_SIZE,
-  FONT_FAMILY,
   isSafari,
   TEXT_ALIGN,
   VERTICAL_ALIGN,
@@ -33,6 +32,9 @@ import {
   updateOriginalContainerCache,
 } from "./textWysiwyg";
 import { ExtractSetType } from "../utility-types";
+import { getFontFamily } from "../utils/font";
+
+const FONT_FAMILY = getFontFamily();
 
 export const normalizeText = (text: string) => {
   return (

@@ -15,6 +15,7 @@ import Footer from "../../components/footer/FooterCenter";
 import MainMenu from "../../components/main-menu/MainMenu";
 import WelcomeScreen from "../../components/welcome-screen/WelcomeScreen";
 import LiveCollaborationTrigger from "../../components/live-collaboration/LiveCollaborationTrigger";
+import { getFontFamily } from "../../utils/font";
 
 const ExcalidrawBase = (props: ExcalidrawProps) => {
   const {
@@ -220,7 +221,11 @@ export {
 } from "../../packages/utils";
 export { isLinearElement } from "../../element/typeChecks";
 
-export { FONT_FAMILY, THEME, MIME_TYPES } from "../../constants";
+export { THEME, MIME_TYPES } from "../../constants";
+
+const FONT_FAMILY = getFontFamily();
+
+export { FONT_FAMILY };
 
 export {
   mutateElement,

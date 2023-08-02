@@ -49,7 +49,6 @@ import {
 import {
   DEFAULT_FONT_FAMILY,
   DEFAULT_FONT_SIZE,
-  FONT_FAMILY,
   ROUNDNESS,
   VERTICAL_ALIGN,
 } from "../constants";
@@ -93,6 +92,7 @@ import { hasStrokeColor } from "../scene/comparisons";
 import { arrayToMap, getShortcutKey } from "../utils";
 import { register } from "./register";
 import { HAND_WRITE_FONTS } from "../constants";
+import { getFontFamily } from "../utils/font";
 
 const FONT_SIZE_RELATIVE_INCREASE_STEP = 0.1;
 
@@ -689,6 +689,8 @@ export const actionChangeFontFamily = register({
     };
   },
   PanelComponent: ({ elements, appState, updateData }) => {
+    const FONT_FAMILY = getFontFamily();
+
     const options: {
       value: FontFamilyValues;
       text: string;
@@ -711,8 +713,8 @@ export const actionChangeFontFamily = register({
       },
     ];
 
-     // custom fonts
-     Object.entries(FONT_FAMILY).forEach(([key, value]) => {
+    // custom fonts
+    Object.entries(FONT_FAMILY).forEach(([key, value]) => {
       if (value <= 3) {
         return;
       }

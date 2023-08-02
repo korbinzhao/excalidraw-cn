@@ -2,6 +2,7 @@ import cssVariables from "./css/variables.module.scss";
 import { AppProps } from "./types";
 import { ExcalidrawElement, FontFamilyValues } from "./element/types";
 import { COLOR_PALETTE } from "./colors";
+import { getFontFamily } from "./utils/font";
 
 export const isDarwin = /Mac|iPod|iPhone|iPad/.test(navigator.platform);
 export const isWindows = /^Win/.test(navigator.platform);
@@ -84,24 +85,6 @@ export const CLASSES = {
 
 export const HAND_WRITE_FONTS = "Virgil, HanziPen SC, Cangnanshoujiti, KaiTi";
 
-// 1-based in case we ever do `if(element.fontFamily)`
-export const FONT_FAMILY = (() => {
-  const fontFamily: { [key: string]: number } = {
-    Helvetica: 2,
-    Cascadia: 3,
-  };
-
-  fontFamily[HAND_WRITE_FONTS] = 1;
-
-  const customFonts = localStorage.getItem("custom_fonts")?.split(",");
-
-  customFonts?.forEach((fontName, index) => {
-    fontFamily[fontName] = index + 4;
-  });
-
-  return fontFamily;
-})();
-
 export const THEME = {
   LIGHT: "light",
   DARK: "dark",
@@ -121,6 +104,8 @@ export const FRAME_STYLE = {
 export const WINDOWS_EMOJI_FALLBACK_FONT = "Segoe UI Emoji";
 
 export const DEFAULT_FONT_SIZE = 20;
+
+const FONT_FAMILY = getFontFamily();
 export const DEFAULT_FONT_FAMILY: FontFamilyValues = FONT_FAMILY["Virgil, HanziPen SC, Cangnanshoujiti, KaiTi"];
 export const DEFAULT_TEXT_ALIGN = "left";
 export const DEFAULT_VERTICAL_ALIGN = "top";

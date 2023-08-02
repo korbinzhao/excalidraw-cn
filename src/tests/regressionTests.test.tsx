@@ -16,7 +16,9 @@ import {
   waitFor,
 } from "./test-utils";
 import { defaultLang } from "../i18n";
-import { FONT_FAMILY } from "../constants";
+import { getFontFamily } from "../utils/font";
+
+const FONT_FAMILY = getFontFamily();
 
 const { h } = window;
 

@@ -25,7 +25,6 @@ import {
   DEFAULT_TEXT_ALIGN,
   DEFAULT_VERTICAL_ALIGN,
   PRECEDING_ELEMENT_KEY,
-  FONT_FAMILY,
   ROUNDNESS,
   DEFAULT_SIDEBAR,
 } from "../constants";
@@ -41,6 +40,7 @@ import {
   measureBaseline,
 } from "../element/textElement";
 import { COLOR_PALETTE } from "../colors";
+import { getFontFamily } from "../utils/font";
 
 type RestoredAppState = Omit<
   AppState,
@@ -73,6 +73,8 @@ export type RestoredDataState = {
 };
 
 const getFontFamilyByName = (fontFamilyName: string): FontFamilyValues => {
+  const FONT_FAMILY = getFontFamily();
+
   if (Object.keys(FONT_FAMILY).includes(fontFamilyName)) {
     return FONT_FAMILY[
       fontFamilyName as keyof typeof FONT_FAMILY

@@ -1,12 +1,15 @@
 import { Point } from "../types";
 import {
-  FONT_FAMILY,
   ROUNDNESS,
   TEXT_ALIGN,
   THEME,
   VERTICAL_ALIGN,
 } from "../constants";
 import { MarkNonNullable, ValueOf } from "../utility-types";
+import { getFontFamily } from "../utils/font";
+
+
+const FONT_FAMILY = getFontFamily();
 
 export type ChartType = "bar" | "line";
 export type FillStyle = "hachure" | "cross-hatch" | "solid" | "zigzag";
@@ -56,11 +59,11 @@ type _ExcalidrawElementBase = Readonly<{
   frameId: string | null;
   /** other elements that are bound to this element */
   boundElements:
-    | readonly Readonly<{
-        id: ExcalidrawLinearElement["id"];
-        type: "arrow" | "text";
-      }>[]
-    | null;
+  | readonly Readonly<{
+    id: ExcalidrawLinearElement["id"];
+    type: "arrow" | "text";
+  }>[]
+  | null;
   /** epoch (ms) timestamp of last element update */
   updated: number;
   link: string | null;

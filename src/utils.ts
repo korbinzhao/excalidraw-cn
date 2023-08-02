@@ -4,7 +4,6 @@ import {
   CURSOR_TYPE,
   DEFAULT_VERSION,
   EVENT,
-  FONT_FAMILY,
   isDarwin,
   MIME_TYPES,
   THEME,
@@ -20,6 +19,7 @@ import { unstable_batchedUpdates } from "react-dom";
 import { SHAPES } from "./shapes";
 import { isEraserActive, isHandToolActive } from "./appState";
 import { ResolutionType } from "./utility-types";
+import { getFontFamily } from "./utils/font";
 
 let mockDateTime: string | null = null;
 
@@ -89,6 +89,8 @@ export const getFontFamilyString = ({
 }: {
   fontFamily: FontFamilyValues;
 }) => {
+  const FONT_FAMILY = getFontFamily();
+
   for (const [fontFamilyString, id] of Object.entries(FONT_FAMILY)) {
     if (id === fontFamily) {
       return `${fontFamilyString}, ${WINDOWS_EMOJI_FALLBACK_FONT}`;

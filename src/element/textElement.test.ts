@@ -1,4 +1,4 @@
-import { BOUND_TEXT_PADDING, FONT_FAMILY } from "../constants";
+import { BOUND_TEXT_PADDING } from "../constants";
 import { API } from "../tests/helpers/api";
 import {
   computeContainerDimensionForBoundText,
@@ -12,6 +12,9 @@ import {
   parseTokens,
 } from "./textElement";
 import { ExcalidrawTextElementWithContainer, FontString } from "./types";
+import { getFontFamily } from "../utils/font";
+
+const FONT_FAMILY = getFontFamily();
 
 describe("Test wrapText", () => {
   const font = "20px Cascadia, width: Segoe UI Emoji" as FontString;

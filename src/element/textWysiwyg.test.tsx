@@ -10,7 +10,7 @@ import {
 } from "../tests/test-utils";
 import { queryByText } from "@testing-library/react";
 
-import { FONT_FAMILY, TEXT_ALIGN, VERTICAL_ALIGN } from "../constants";
+import { TEXT_ALIGN, VERTICAL_ALIGN } from "../constants";
 import {
   ExcalidrawTextElement,
   ExcalidrawTextElementWithContainer,
@@ -19,6 +19,9 @@ import { API } from "../tests/helpers/api";
 import { mutateElement } from "./mutateElement";
 import { resize } from "../tests/utils";
 import { getOriginalContainerHeightFromCache } from "./textWysiwyg";
+import { getFontFamily } from "../utils/font";
+
+const FONT_FAMILY = getFontFamily();
 
 // Unmount ReactDOM from root
 ReactDOM.unmountComponentAtNode(document.getElementById("root")!);
