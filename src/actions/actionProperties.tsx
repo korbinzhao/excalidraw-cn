@@ -711,11 +711,16 @@ export const actionChangeFontFamily = register({
         text: t("labels.code"),
         icon: FontFamilyCodeIcon,
       },
+      {
+        value: FONT_FAMILY.Cangnanshoujiti,
+        text: "中文手写",
+        icon: <span>中</span>,
+      },
     ];
 
     // custom fonts
     Object.entries(FONT_FAMILY).forEach(([key, value]) => {
-      if (value <= 3) {
+      if (value <= 4) {
         return;
       }
       options.push({
