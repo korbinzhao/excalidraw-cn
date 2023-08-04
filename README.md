@@ -4,15 +4,19 @@ A whiteboard supporting Chinese hand writing style and multi-canvas based on exc
 
 ### Try it now
 - ReveNote
+  - Handraw 已全面升级至 [ReveNote](https://github.com/revenote/revenote)，功能更全，体验更佳，支持桌面端应用和自定义字体。立即前往体验。
+    - 线上体验版 (基础功能): https://revenote.com
+    - 桌面应用版 (全量功能): https://github.com/revenote/revenote/releases
   - Handraw has been fully upgraded to [ReveNote](https://github.com/revenote/revenote), with more features and better experience, supporting desktop applications and custom fonts. Please go to use it now.
     - Online (basic fuction): https://revenote.com
-    - Desktop app: https://github.com/revenote/revenote/releases
+    - Desktop app (full function): https://github.com/revenote/revenote/releases
 - ~~Online Try (Deprecated，不推荐)~~
-  - ~~Visit [handraw.top](https://handraw.top/) to free.~~
   - ~~访问 [handraw.top](https://handraw.top/) 使用。~~
+  - ~~Visit [handraw.top](https://handraw.top/) to free.~~
 - Obsidian Plugin
-  - Comming soon, welcome to Star the plugin repo :point_right: [obsidian-excalidraw-cn-plugin](https://github.com/korbinzhao/obsidian-excalidraw-cn-plugin), v1.0.0 development done, official reviewing.
   - 开源插件（欢迎 Star :point_right:）[obsidian-excalidraw-cn-plugin](https://github.com/korbinzhao/obsidian-excalidraw-cn-plugin) v1.0.0 开发完成，官方评审中，敬请期待。
+  - Comming soon, welcome to Star the plugin repo :point_right: [obsidian-excalidraw-cn-plugin](https://github.com/korbinzhao/obsidian-excalidraw-cn-plugin), v1.0.0 development done, official reviewing.
+  
 
 ### :purple_heart:Sponsors
 
