@@ -3,10 +3,13 @@
 A whiteboard supporting Chinese hand writing style and multi-canvas based on excalidraw.
 
 ### Try it now
-
-- Online
-  - Visit [handraw.top](https://handraw.top/) to use free.
-  - 访问 [handraw.top](https://handraw.top/) 免费使用。
+- ReveNote
+  - Handraw has been fully upgraded to [ReveNote](https://github.com/revenote/revenote), with more features and better experience, supporting desktop applications and custom fonts. Please go to use it now.
+    - Online (basic fuction): https://revenote.com
+    - Desktop app: https://github.com/revenote/revenote/releases
+- ~~Online Try (Deprecated，不推荐)~~
+  - ~~Visit [handraw.top](https://handraw.top/) to free.~~
+  - ~~访问 [handraw.top](https://handraw.top/) 使用。~~
 - Obsidian Plugin
   - Comming soon, welcome to Star the plugin repo :point_right: [obsidian-excalidraw-cn-plugin](https://github.com/korbinzhao/obsidian-excalidraw-cn-plugin), v1.0.0 development done, official reviewing.
   - 开源插件（欢迎 Star :point_right:）[obsidian-excalidraw-cn-plugin](https://github.com/korbinzhao/obsidian-excalidraw-cn-plugin) v1.0.0 开发完成，官方评审中，敬请期待。
