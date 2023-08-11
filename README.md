@@ -3,13 +3,15 @@
 A whiteboard supporting Chinese hand writing style and multi-canvas based on excalidraw.
 
 ### Try it now
-- ReveNote
-  - Handraw 已全面升级至 [ReveNote](https://github.com/revenote/revenote)，功能更全，体验更佳，支持桌面端应用和自定义字体。立即前往体验。
-    - 线上体验版 (基础功能): https://revenote.com
-    - 桌面应用版 (全量功能): https://github.com/revenote/revenote/releases
-  - Handraw has been fully upgraded to [ReveNote](https://github.com/revenote/revenote), with more features and better experience, supporting desktop applications and custom fonts. Please go to use it now.
-    - Online (basic fuction): https://revenote.com
-    - Desktop app (full function): https://github.com/revenote/revenote/releases
+- ReveZone
+  - Handraw 已全面升级至 [ReveZone](https://github.com/revezone/revezone)（目前处在公测阶段，动动小手给个 star 吧），支持更方便的多画布文件管理和自定义字体，欢迎体验。
+    - Github 地址：https://github.com/revezone/revezone
+    - 线上体验版 (数据存储在浏览器): https://revezone.com
+    - 桌面应用版 (数据存储在本地): https://github.com/revezone/revezone/releases
+  - Handraw has been fully upgraded to [ReveZone](https://github.com/revezone/revezone), with more features and better experience, supporting desktop applications and custom fonts. Please go to use it now.
+    - Github: https://github.com/revezone/revezone
+    - Online (basic fuction): https://revezone.com
+    - Desktop app (full function): https://github.com/revezone/revezone/releases
 - ~~Online Try (Deprecated，不推荐)~~
   - ~~访问 [handraw.top](https://handraw.top/) 使用。~~
   - ~~Visit [handraw.top](https://handraw.top/) to use.~~
