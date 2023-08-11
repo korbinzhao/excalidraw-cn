@@ -5,7 +5,7 @@ A whiteboard supporting Chinese hand writing style and multi-canvas based on exc
 ### Try it now
 - ReveZone
   - Handraw 已全面升级至 [ReveZone](https://github.com/revezone/revezone)（目前处在公测阶段，动动小手给个 star 吧），支持更方便的多画布文件管理和自定义字体，欢迎体验。
-    - Github 地址：https://github.com/revezone/revezone
+    - Github 地址：https://github.com/revezone/revezone 👈 给个 Star 吧
     - 线上体验版 (数据存储在浏览器): https://revezone.com
     - 桌面应用版 (数据存储在本地): https://github.com/revezone/revezone/releases
   - Handraw has been fully upgraded to [ReveZone](https://github.com/revezone/revezone), with more features and better experience, supporting desktop applications and custom fonts. Please go to use it now.
