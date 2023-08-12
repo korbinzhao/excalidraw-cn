@@ -3,20 +3,22 @@
 A whiteboard supporting Chinese hand writing style and multi-canvas based on excalidraw.
 
 ### Try it now
-
-- ReveNote
-  - Handraw 已全面升级至 [ReveNote](https://github.com/revenote/revenote)，功能更全，体验更佳，支持桌面端应用和自定义字体。立即前往体验。
-    - 线上体验版 (基础功能): https://revenote.com
-    - 桌面应用版 (全量功能): https://github.com/revenote/revenote/releases
-  - Handraw has been fully upgraded to [ReveNote](https://github.com/revenote/revenote), with more features and better experience, supporting desktop applications and custom fonts. Please go to use it now.
-    - Online (basic fuction): https://revenote.com
-    - Desktop app (full function): https://github.com/revenote/revenote/releases
+- ReveZone
+  - Handraw 已全面升级至 [ReveZone](https://github.com/revezone/revezone)（目前处在公测阶段，动动小手给个 star 吧），支持更方便的多画布文件管理和自定义字体，欢迎体验。
+    - Github 地址：https://github.com/revezone/revezone 👈 给个 Star 吧
+    - 线上体验版 (数据存储在浏览器): https://revezone.com
+    - 桌面应用版 (数据存储在本地): https://github.com/revezone/revezone/releases
+  - Handraw has been fully upgraded to [ReveZone](https://github.com/revezone/revezone), with more features and better experience, supporting desktop applications and custom fonts. Please go to use it now.
+    - Github: https://github.com/revezone/revezone
+    - Online (basic fuction): https://revezone.com
+    - Desktop app (full function): https://github.com/revezone/revezone/releases
 - ~~Online Try (Deprecated，不推荐)~~
   - ~~访问 [handraw.top](https://handraw.top/) 使用。~~
   - ~~Visit [handraw.top](https://handraw.top/) to use.~~
 - Obsidian Plugin
   - 开源插件（欢迎 Star :point_right:）[obsidian-excalidraw-cn-plugin](https://github.com/korbinzhao/obsidian-excalidraw-cn-plugin) v1.0.0 开发完成，官方评审中，敬请期待。
   - Comming soon, welcome to Star the plugin repo :point_right: [obsidian-excalidraw-cn-plugin](https://github.com/korbinzhao/obsidian-excalidraw-cn-plugin), v1.0.0 development done, official reviewing.
+  
 
 ### :purple_heart:Sponsors
 
@@ -27,6 +29,7 @@ Thanks for all the sponsors:
 - [Ethan](https://afdian.net/u/69e049a822c511ee886c52540025c377)
 - 二米 - [国产 SOAR 厂商雾帜智能](https://www.flagify.com/)
 - [爱发电用户\_SFnB](https://afdian.net/u/9ad7f8a01aee11ee808d5254001e7c00)
+
 
 #### Chinese Handwriting Style（中文手写效果）
 
