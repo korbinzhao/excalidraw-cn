@@ -2,6 +2,7 @@ import React from "react";
 // import { PlusPromoIcon } from "../../components/icons";
 import { MainMenu } from "../../packages/excalidraw/index";
 import { LanguageList } from "./LanguageList";
+import { UploadLocalData } from "./LanguageList";
 
 export const AppMainMenu: React.FC<{
   setCollabDialogShown: (toggle: boolean) => any;
@@ -37,6 +38,10 @@ export const AppMainMenu: React.FC<{
         <LanguageList style={{ width: "100%" }} />
       </MainMenu.ItemCustom>
       <MainMenu.DefaultItems.ChangeCanvasBackground />
+      <MainMenu.Separator />
+      <MainMenu.ItemCustom>
+        <UploadLocalData style={{ width: "100%" }} />
+      </MainMenu.ItemCustom>
     </MainMenu>
   );
 });
