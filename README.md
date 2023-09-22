@@ -22,13 +22,9 @@ A whiteboard supporting Chinese hand writing style and multi-canvas based on exc
 
 ### :purple_heart:Sponsors
 
-> Welcome sponsors to contact me for customized advertising information. Quick link: <a href="https://afdian.net/a/wantian" target="_blank">投喂猫粮</a> or <a href="https://www.buymeacoffee.com/korbinzhao" target="_blank">Buy me a coffee</a>.
+> Welcome sponsors to contact me for customized advertising information. Quick link: <a href="https://github.com/korbinzhao/donate" target="_blank">投喂猫粮（大陆用户）</a> or <a href="https://www.buymeacoffee.com/korbinzhao" target="_blank">Buy me a coffee</a>.
 
-Thanks for all the sponsors:
-
-- [Ethan](https://afdian.net/u/69e049a822c511ee886c52540025c377)
-- 二米 - [国产 SOAR 厂商雾帜智能](https://www.flagify.com/)
-- [爱发电用户\_SFnB](https://afdian.net/u/9ad7f8a01aee11ee808d5254001e7c00)
+Thanks for [all the sponsors](https://github.com/korbinzhao/donate/blob/main/HISTORY.md)
 
 
 #### Chinese Handwriting Style（中文手写效果）
