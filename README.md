@@ -1,6 +1,9 @@
 ![](https://img.alicdn.com/imgextra/i3/O1CN01Fj9ngw1N77fY1yafL_!!6000000001522-2-tps-1639-395.png)
 
-A whiteboard supporting Chinese hand writing style and multi-canvas based on excalidraw.
+基于[Excalidraw](https://github.com/excalidraw/excalidraw)的支持中文手写字体风格及多画布的白板。
+
+
+A whiteboard based on [Excalidraw]( https://github.com/excalidraw/excalidraw), supporting Chinese handwritten font styles and multiple canvases.
 
 ### Try it now
 - ReveZone
